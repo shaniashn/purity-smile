@@ -17,7 +17,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero-container">
-        <h1>Your Health Starts With a Brilliant Smile.</h1>
+        <h1>Your Health Starts With a <span>Brilliant Smile.</span></h1>
         <p>Designed by dental experts, our line of floss, brushes, and specialized care products transforms your routine
           from a chore into a foundation for total well-being. Feel the difference of true clean.</p>
         <button>→ Explore the Full Collection</button>
@@ -241,7 +241,36 @@ nav {
 }
 
 .hero-container {
-  text-align: center;
+  text-align: left;
+  max-width: 600px;
+  justify-self: left;
+  margin-left: 90pt;
+}
+
+.hero-container h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.hero-container h1 span {
+  color: #53A9B3;
+}
+
+.hero-container p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-container button {
+  background-color: #53A9B3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50pt;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .key-features {

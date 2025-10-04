@@ -245,6 +245,7 @@ nav {
   max-width: 600px;
   justify-self: left;
   margin-left: 90pt;
+  margin-bottom: 100pt;
 }
 
 .hero-container h1 {

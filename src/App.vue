@@ -243,9 +243,11 @@ nav {
 .hero-container {
   text-align: left;
   max-width: 600px;
-  justify-self: left;
-  margin-left: 90pt;
-  margin-bottom: 100pt;
+  margin-left: 50pt;
+  display: grid;
+  gap: 20px;
+  height: 80vh;
+  align-content: center;
 }
 
 .hero-container h1 {
@@ -263,15 +265,17 @@ nav {
 }
 
 .hero-container button {
+  font-family: 'Wix Madefor Display', sans-serif;
   background-color: #53A9B3;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 50pt;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   margin-top: 20px;
+  width: 300px;
 }
 
 .key-features {

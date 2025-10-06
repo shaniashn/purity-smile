@@ -28,7 +28,7 @@
     <div class="container">
       <div class="key-feature-item">
         <img src="./assets/features-item-1.png" alt="Key Feature 1">
-        <h2>Gentle on Gums, Tough on Plaque.</h2>
+        <h2>Gentle on Gums, Tough on Plaque</h2>
         <p>Our proprietary tapered filaments reach deep between teeth and along the gumline without the abrasive force
           that causes recession and sensitivity. Brush better, not harder.</p>
       </div>
@@ -41,7 +41,7 @@
 
       <div class="key-feature-item">
         <img src="./assets/features-item-3.png" alt="Key Feature 3">
-        <h2>Expert-Backed Simplicity.</h2>
+        <h2>Expert-Backed Simplicity</h2>
         <p>Stop guessing in the aisle. Every PuritySmile product is recommended by practicing dentists, ensuring that
           you’re using the safest and most effective tools for your unique oral health needs.</p>
       </div>
@@ -283,10 +283,25 @@ nav {
 }
 
 .key-features .container {
-  padding: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: auto;
+  padding: 100px 50px;
+}
+
+.key-feature-item {
+  display: grid;
+  align-content: space-between;
+  padding: 20px;
+}
+
+.key-feature-item h2 {
+  padding: 20px;
+}
+
+.key-feature-item img {
+  max-width: 100%;
 }
 
 .products {

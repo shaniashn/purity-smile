@@ -306,6 +306,23 @@ nav {
 
 .products {
   background: linear-gradient(180deg, #B3E6E9 0%, #E2F5F6 15%, #FFFFFF 26%, #98D3DA 91%, #6FC2CC 100%), url('./assets/ornament.svg');
+  height: auto;
+}
+
+.product-header h2 {
+  font-size: 40px;
+} 
+
+.product-header h2:first-child {
+  font-size: 30px;
+}
+
+.product-header h2 span {
+  color: #53A9B3;
+}
+
+.product-items {
+  margin: 50px;
 }
 
 .cta {

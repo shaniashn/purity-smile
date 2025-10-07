@@ -55,7 +55,9 @@
       </div>
       <div class="product-items">
         <div class="product-item">
-          <img src="./assets/toothbrush.png" alt="The Bio-Taper Toothbrush">
+          <div class="product-item-image">
+            <img src="./assets/toothbrush.png" alt="The Bio-Taper Toothbrush">
+          </div>
           <div class="product-item-content">
             <h3>The Bio-Taper Toothbrush</h3>
             <p class="category">Biodegradable Daily Care</p>
@@ -69,7 +71,9 @@
           </div>
         </div>
         <div class="product-item">
-          <img src="./assets/floss.png" alt="Expanding HydroFloss">
+          <div class="product-item-image">
+            <img src="./assets/floss.png" alt="Expanding HydroFloss">
+          </div>
           <div class="product-item-content">
             <h3>Expanding HydroFloss</h3>
             <p class="category">Deep-Cleaning Floss</p>
@@ -84,7 +88,9 @@
           </div>
         </div>
         <div class="product-item">
-          <img src="./assets/mouthwash.png" alt="GumLine Guard Rinse">
+          <div class="product-item-image">
+            <img src="./assets/mouthwash.png" alt="GumLine Guard Rinse">
+          </div>
           <div class="product-item-content">
             <h3>GumLine Guard Rinse</h3>
             <p class="category">Specialized Care</p>
@@ -322,15 +328,109 @@ nav {
 }
 
 .product-items {
-  margin: 50px;
+  display: grid;
+  margin: 0 80px;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 20px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 30pt;
+  margin: 30px;
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 33%);
+}
+
+.product-item-image {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product-item-content {
+  display: grid;
+  text-align: left;
+  align-items: center;
+}
+
+.product-item-content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1pc;
+}
+
+.product-item-content p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product-item-content .category {
+  color: #90ABAD;
+}
+
+.product-item-content .description {
+  margin-bottom: 20px;
+}
+
+.product-item-content .price {
+  display: grid;
+  gap: 10px;
+}
+
+.product-item-content .price .original-price {
+  text-decoration: line-through;
+  color: #BA4141;
+}
+
+.product-item-content .price .discounted-price {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .cta {
-  height: 70vh;
   background: #6FC2CC url('./assets/circle.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: grid;
+  align-content: center;
+}
+
+.cta-container {
+  display: grid;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 100px;
+}
+
+.cta-container h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.cta-container h2 span {
+  color: #283D65;
+}
+
+.cta-container p {
+  width: 55%;
+}
+
+.cta-container button {
+  font-family: 'Wix Madefor Display', sans-serif;
+  background-color: #283D65;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50pt;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 300px;
 }
 
 footer {

@@ -119,7 +119,14 @@
   <footer>
     <div class="container">
       <div class="footer-container">
-        <h2>PuritySmile</h2>
+        <div class="logo-social">
+          <img src="./assets/footer-logo.png" alt="PuritySmile">
+          <div class="social">
+            <img src="./assets/social/icons8-facebook.svg " alt="Facebook">
+            <img src="./assets/social/icons8-instagram.svg" alt="Instagram">
+            <img src="./assets/social/icons8-linkedin.svg" alt="Linkedin">
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -311,12 +318,18 @@ nav {
 }
 
 .products {
-  background: linear-gradient(180deg, #B3E6E9 0%, #E2F5F6 15%, #FFFFFF 26%, #98D3DA 91%, #6FC2CC 100%), url('./assets/ornament.svg');
+  background: #B3E6E9  url('./assets/ornament.svg');
+  /* background: linear-gradient(180deg, #B3E6E9 0%, #E2F5F6 15%, #FFFFFF 26%, #98D3DA 91%, #6FC2CC 100%) url('./assets/ornament.svg'); */
   height: auto;
+}
+
+.product-header {
+  padding: 50px 0;
 }
 
 .product-header h2 {
   font-size: 40px;
+  line-height: 4pc;
 } 
 
 .product-header h2:first-child {

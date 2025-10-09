@@ -120,12 +120,26 @@
     <div class="container">
       <div class="footer-container">
         <div class="logo-social">
-          <img src="./assets/footer-logo.png" alt="PuritySmile">
+          <img src="./assets/footer-logo.svg" alt="PuritySmile">
           <div class="social">
             <img src="./assets/social/icons8-facebook.svg " alt="Facebook">
             <img src="./assets/social/icons8-instagram.svg" alt="Instagram">
             <img src="./assets/social/icons8-linkedin.svg" alt="Linkedin">
           </div>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -448,10 +462,40 @@ nav {
 
 footer {
   background: #F0FEFF url('./assets/line-circle.svg');
-  height: 70vh;
+  /* height: 70vh; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  text-align: left;
+  margin: 20px ;
+  justify-content: space-between;
+}
+
+.quick-links ul {
+  display: grid;
+  gap: 20px;
+  height: 0;
+}
+
+.quick-links li {
+  list-style: none;
+}
+
+.quick-links ul li a {
+  text-decoration: none;
+  color: #283D65;
 }
 
 /* Responsive Styles */

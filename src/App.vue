@@ -4,6 +4,7 @@
       <div class="nav-container">
         <div class="logo">
           <img src="./assets/purity-transparent.png" alt="Purity Smile">
+          <i class="fa-solid fa-bars"></i>
         </div>
         <ul>
           <li><a href="#">Our Products</a></li>
@@ -496,5 +497,223 @@ footer {
 .quick-links ul li a {
   text-decoration: none;
   color: #283D65;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Navigation */
+  .nav-container {
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    /* border-radius: 20px; */
+  }
+
+  .nav-container .logo {
+    /* margin: 0 0 15px 0; */
+    width: 120px;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .nav-container ul li {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-container ul li:last-child {
+    padding: 12px 20px;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 0 50px 0;
+  }
+
+  .hero-container {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+    min-height: 70vh;
+  }
+
+  .hero-container h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .hero-container p {
+    font-size: 14px;
+  }
+
+  .hero-container button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Key Features */
+  .key-features .container {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  .key-feature-item {
+    padding: 15px;
+  }
+
+  .key-feature-item h2 {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+
+  .key-feature-item p {
+    font-size: 14px;
+  }
+
+  /* Products Section */
+  .product-header {
+    padding: 30px 20px;
+  }
+
+  .product-header h2 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .product-header h2:first-child {
+    font-size: 20px;
+  }
+
+  .product-items {
+    margin: 0 20px;
+  }
+
+  .product-item {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+  }
+
+  .product-item-image {
+    justify-content: center;
+  }
+
+  .product-item-image img {
+    max-width: 200px;
+  }
+
+  .product-item-content {
+    text-align: center;
+    gap: 15px;
+  }
+
+  .product-item-content h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .product-item-content p {
+    font-size: 14px;
+  }
+
+  .product-item-content .price .discounted-price {
+    font-size: 24px;
+  }
+
+  /* CTA Section */
+  .cta-container {
+    margin: 50px 20px;
+    gap: 20px;
+  }
+
+  .cta-container h2 {
+    font-size: 28px;
+  }
+
+  .cta-container p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .cta-container button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-social img {
+    max-width: 150px;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+  }
+
+  .quick-links {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .quick-links ul {
+    gap: 15px;
+  }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+
+  .nav-container ul {
+    display: none;
+  }
+
+  .hero-container h1 {
+    font-size: 45px;
+  }
+
+  .product-header h2 {
+    font-size: 24px;
+  }
+
+  .product-header h2:first-child {
+    font-size: 18px;
+  }
+
+  .cta-container h2 {
+    font-size: 24px;
+  }
+
+  .product-item {
+    padding: 20px 15px;
+  }
 }
 </style>

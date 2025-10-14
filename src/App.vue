@@ -668,7 +668,7 @@ footer {
   }
 
   .logo-social img {
-    max-width: 150px;
+    max-width: 35px;
   }
 
   .social {

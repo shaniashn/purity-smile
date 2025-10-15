@@ -498,6 +498,10 @@ footer {
   color: #283D65;
 }
 
+.logo-social .social img {
+    width: 30px;
+  }
+
 /* Responsive Styles for Mobile Devices */
 @media screen and (max-width: 768px) {
   .container {

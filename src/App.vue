@@ -4,15 +4,15 @@
       <div class="nav-container">
         <div class="logo">
           <img src="./assets/purity-transparent.png" alt="Purity Smile">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <ul>
-          <li><a href="#">Our Products</a></li>
-          <li><a href="#">The Science</a></li>
-          <li><a href="#">FAQs & Support</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
       </div>
+      <ul>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">The Science</a></li>
+        <li><a href="#">FAQs & Support</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
   </nav>
   <section class="hero">
@@ -254,6 +254,14 @@ nav {
 .nav-container ul li a:hover {
   color: #26818b;
   transition: all 0.3s ease;
+}
+
+.nav-container .logo {
+  display: flex;
+}
+
+.fa-chevron-down {
+  display: none;
 }
 
 .hero {
@@ -537,6 +545,16 @@ footer {
     padding: 12px 20px;
   }
 
+  .fa-chevron-down {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  ul {
+    display: block;
+  }
+
   /* Hero Section */
   .hero {
     height: auto;
@@ -696,7 +714,7 @@ footer {
 @media screen and (max-width: 480px) {
 
   .nav-container ul {
-    display: none;
+    display: flex;
   }
 
   .hero-container h1 {

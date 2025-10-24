@@ -6,13 +6,23 @@
           <img src="./assets/purity-transparent.png" alt="Purity Smile">
           <i class="fa-solid fa-chevron-down"></i>
         </div>
+        <div class="desktop-menu">
+          <ul>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">The Science</a></li>
+            <li><a href="#">FAQs & Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li><a href="#">Our Products</a></li>
-        <li><a href="#">The Science</a></li>
-        <li><a href="#">FAQs & Support</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">The Science</a></li>
+          <li><a href="#">FAQs & Support</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
   <section class="hero">
@@ -261,6 +271,10 @@ nav {
 }
 
 .fa-chevron-down {
+  display: none;
+}
+
+.mobile-menu {
   display: none;
 }
 
@@ -584,6 +598,17 @@ footer {
     max-width: 300px;
   }
 
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
   /* Key Features */
   .key-features .container {
     grid-template-columns: 1fr;
@@ -715,6 +740,29 @@ footer {
 
   .nav-container ul {
     display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+
+    background-color: #fff;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu ul li{
+    list-style: none;
+    padding: 10px;
+  }
+
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: #283D65;
   }
 
   .hero-container h1 {

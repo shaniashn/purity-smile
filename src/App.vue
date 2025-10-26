@@ -747,7 +747,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     margin: 10px;
-
+    display: none;
     background-color: #fff;
   }
 

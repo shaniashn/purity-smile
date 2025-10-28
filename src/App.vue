@@ -15,7 +15,7 @@
           </ul>
         </div>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu hidden">
         <ul>
           <li><a href="#">Our Products</a></li>
           <li><a href="#">The Science</a></li>
@@ -159,7 +159,21 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      showDesktopMenu: true,
+    }
+  },
+  methods: {
+    toggleDesktopMenu() {
+      if (window.innerWidth < 768) {
+        this.showDesktopMenu = false;
+      } else {
+        this.showDesktopMenu = true;
+      }
+    }
+  }
 }
 </script>
 
@@ -239,20 +253,20 @@ nav {
   text-decoration: none;
 }
 
-.nav-container ul li:last-child {
+.nav-container ul li:last-child, .mobile-menu ul li:last-child {
   padding: 15px 28px;
   background-color: #53A9B3;
   border-radius: 50pt;
 }
 
-.nav-container ul li:last-child:hover {
+.nav-container ul li:last-child:hover, .mobile-menu ul li:last-child:hover {
   background-color: #1f8c98;
   box-sizing: border-box;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.nav-container ul li:last-child a {
+.nav-container ul li:last-child a, .mobile-menu ul li:last-child a {
   color: #fff;
 }
 
@@ -545,7 +559,7 @@ footer {
 
   .nav-container ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     width: 100%;
   }
 
@@ -603,10 +617,12 @@ footer {
     flex-direction: column;
     gap: 10px;
     margin: 10px;
+    border-radius: 15pt;
   }
 
   .desktop-menu {
     display: none;
+    margin-top: 25px;
   }
 
   /* Key Features */
@@ -747,8 +763,11 @@ footer {
     flex-direction: column;
     gap: 10px;
     margin: 10px;
-    display: none;
     background-color: #fff;
+  }
+
+  .mobile-menu.hidden {
+    position: absolute;
   }
 
   .desktop-menu {
@@ -758,6 +777,7 @@ footer {
   .mobile-menu ul li{
     list-style: none;
     padding: 10px;
+    margin: 5px;
   }
 
   .mobile-menu ul li a {

@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="container">
-      <div class="nav-container">
+      <div class="nav-container" @click="toggleMobileMenu">
         <div class="logo">
           <img src="./assets/purity-transparent.png" alt="Purity Smile">
           <i class="fa-solid fa-chevron-down"></i>
@@ -15,7 +15,7 @@
           </ul>
         </div>
       </div>
-      <div class="mobile-menu hidden">
+      <div class="mobile-menu" :class="{ 'hidden': showMobileMenu }">
         <ul>
           <li><a href="#">Our Products</a></li>
           <li><a href="#">The Science</a></li>
@@ -162,17 +162,17 @@ export default {
   name: 'App',
   data() {
     return {
-      showDesktopMenu: true,
+      showMobileMenu: false,
     }
   },
   methods: {
-    toggleDesktopMenu() {
-      if (window.innerWidth < 768) {
-        this.showDesktopMenu = false;
-      } else {
-        this.showDesktopMenu = true;
-      }
+    toggleMobileMenu() {
+      this.showMobileMenu = !this.showMobileMenu;
+      console.log(this.showMobileMenu);
+      
     }
+  },
+  mounted() {
   }
 }
 </script>
@@ -767,7 +767,7 @@ footer {
   }
 
   .mobile-menu.hidden {
-    position: absolute;
+    display: none;
   }
 
   .desktop-menu {

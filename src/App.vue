@@ -522,7 +522,7 @@ footer {
 .quick-links ul {
   display: grid;
   gap: 20px;
-  height: 0;
+  /* height: 0; */
 }
 
 .quick-links li {

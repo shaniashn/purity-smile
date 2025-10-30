@@ -169,7 +169,7 @@ export default {
     toggleMobileMenu() {
       this.showMobileMenu = !this.showMobileMenu;
       console.log(this.showMobileMenu);
-      
+
     }
   },
   mounted() {
@@ -248,25 +248,28 @@ nav {
   align-items: center;
 }
 
-.nav-container ul li a {  
+.nav-container ul li a {
   color: #283D65;
   text-decoration: none;
 }
 
-.nav-container ul li:last-child, .mobile-menu ul li:last-child {
+.nav-container ul li:last-child,
+.mobile-menu ul li:last-child {
   padding: 15px 28px;
   background-color: #53A9B3;
   border-radius: 50pt;
 }
 
-.nav-container ul li:last-child:hover, .mobile-menu ul li:last-child:hover {
+.nav-container ul li:last-child:hover,
+.mobile-menu ul li:last-child:hover {
   background-color: #1f8c98;
   box-sizing: border-box;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.nav-container ul li:last-child a, .mobile-menu ul li:last-child a {
+.nav-container ul li:last-child a,
+.mobile-menu ul li:last-child a {
   color: #fff;
 }
 
@@ -365,10 +368,11 @@ nav {
 
 .key-feature-item img {
   max-width: 100%;
+  justify-self: center;
 }
 
 .products {
-  background: #B3E6E9  url('./assets/ornament.svg');
+  background: #B3E6E9 url('./assets/ornament.svg');
   /* background: linear-gradient(180deg, #B3E6E9 0%, #E2F5F6 15%, #FFFFFF 26%, #98D3DA 91%, #6FC2CC 100%) url('./assets/ornament.svg'); */
   height: auto;
 }
@@ -380,7 +384,7 @@ nav {
 .product-header h2 {
   font-size: 40px;
   line-height: 4pc;
-} 
+}
 
 .product-header h2:first-child {
   font-size: 30px;
@@ -515,7 +519,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   text-align: left;
-  margin: 20px ;
+  margin: 20px;
   justify-content: space-between;
 }
 
@@ -535,8 +539,8 @@ footer {
 }
 
 .logo-social .social img {
-    width: 30px;
-  }
+  width: 30px;
+}
 
 /* Responsive Styles for Mobile Devices */
 @media screen and (max-width: 768px) {
@@ -549,11 +553,9 @@ footer {
     flex-direction: column;
     margin: 10px;
     padding: 15px;
-    /* border-radius: 20px; */
   }
 
   .nav-container .logo {
-    /* margin: 0 0 15px 0; */
     width: 120px;
   }
 
@@ -618,6 +620,22 @@ footer {
     gap: 10px;
     margin: 10px;
     border-radius: 15pt;
+    background-color: #fff;
+  }
+
+  .mobile-menu.hidden {
+    display: none;
+  }
+
+  .mobile-menu ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: #283D65;
   }
 
   .desktop-menu {
@@ -753,37 +771,36 @@ footer {
 
 /* Extra Small Devices */
 @media screen and (max-width: 480px) {
-
-  .nav-container ul {
+  /* .nav-container ul {
     display: flex;
-  }
+  } */
 
-  .mobile-menu {
+  /* .mobile-menu {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 10px;
     background-color: #fff;
-  }
+  } */
 
-  .mobile-menu.hidden {
+  /* .mobile-menu.hidden {
     display: none;
-  }
+  } */
 
-  .desktop-menu {
+  /* .desktop-menu {
     display: none;
-  }
+  } */
 
-  .mobile-menu ul li{
+  /* .mobile-menu ul li {
     list-style: none;
     padding: 10px;
     margin: 5px;
-  }
+  } */
 
-  .mobile-menu ul li a {
+  /* .mobile-menu ul li a {
     text-decoration: none;
     color: #283D65;
-  }
+  } */
 
   .hero-container h1 {
     font-size: 45px;

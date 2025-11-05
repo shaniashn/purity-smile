@@ -373,6 +373,7 @@ nav {
 
 .products {
   background: #B3E6E9 url('./assets/ornament.svg');
+  /* background: linear-gradient(180deg, #B3E6E9 0%, #E2F5F6 15%, #FFFFFF 26%, #98D3DA 91%, #6FC2CC 100%) url('./assets/ornament.svg'); */
   height: auto;
 }
 
@@ -770,6 +771,37 @@ footer {
 
 /* Extra Small Devices */
 @media screen and (max-width: 480px) {
+  /* .nav-container ul {
+    display: flex;
+  } */
+
+  /* .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    background-color: #fff;
+  } */
+
+  /* .mobile-menu.hidden {
+    display: none;
+  } */
+
+  /* .desktop-menu {
+    display: none;
+  } */
+
+  /* .mobile-menu ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+  } */
+
+  /* .mobile-menu ul li a {
+    text-decoration: none;
+    color: #283D65;
+  } */
+
   .hero-container h1 {
     font-size: 45px;
   }
